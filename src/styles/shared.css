@@ -1,0 +1,63 @@
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.btn--primary {
+  background: var(--blue);
+  color: #0a1220;
+}
+
+.btn--primary:hover {
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.btn--ghost:hover {
+  border-color: var(--ink-dim);
+}
+
+/* ============ TAGS ============ */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* default tag = mid-tone blue */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid var(--blue-soft-dim);
+  color: var(--blue-soft);
+  background: rgba(143, 182, 242, 0.07);
+}
+
+/* brightest blue variant — used sparingly, e.g. featured items */
+.tag-row--primary .tag {
+  border-color: var(--blue-dim);
+  color: var(--blue);
+  background: rgba(91, 155, 255, 0.09);
+}
+
+/* deepest, quietest blue variant */
+.tag-row--muted .tag {
+  border-color: var(--blue-muted-dim);
+  color: var(--blue-muted);
+  background: rgba(107, 133, 179, 0.08);
+}

@@ -3,6 +3,7 @@ import Icon from "./Icon";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { useClock } from "../hooks/useClock";
 import { profile } from "../data/portfolioData";
+import "./Navbar.css";
 
 const NAV_ITEMS = [
   { id: "about", label: "About" },
@@ -24,8 +25,8 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar__inner">
-        
-        <a href="#about"
+        <a
+          href="#about"
           className="navbar__logo"
           onClick={(e) => {
             e.preventDefault();
@@ -38,8 +39,8 @@ export default function Navbar() {
 
         <nav className={`navbar__links ${open ? "is-open" : ""}`}>
           {NAV_ITEMS.map((item) => (
-            
-            <a key={item.id}
+            <a
+              key={item.id}
               href={`#${item.id}`}
               className={`navbar__link ${active === item.id ? "is-active" : ""}`}
               onClick={(e) => {

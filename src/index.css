@@ -1,22 +1,24 @@
 :root {
   color-scheme: dark;
 
-  /* ---- palette ---- */
-  --bg: #0f1115;
-  --bg-raised: #151922;
-  --bg-inset: #10131a;
-  --line: #262c37;
-  --line-soft: #1b2029;
+  /* ---- palette: monochromatic blue ---- */
+  --bg: #0a0e17;
+  --bg-raised: #111a2c;
+  --bg-inset: #0d1322;
+  --line: #22304a;
+  --line-soft: #171f33;
 
-  --ink: #f2f0ea;
-  --ink-dim: #939bab;
-  --ink-faint: #5c6373;
+  --ink: #eaf0fc;
+  --ink-dim: #94a7c9;
+  --ink-faint: #56698f;
 
-  --amber: #e8a33d;
-  --amber-dim: #6b5433;
-  --teal: #5fc9b8;
-  --teal-dim: #2d4a45;
-  --rose: #d98a8a;
+  /* three tints of the same blue hue — used for hierarchy, not variety */
+  --blue: #5b9bff;       /* brightest — primary actions, name, active nav */
+  --blue-dim: #1b3868;   /* dimmed fill behind --blue */
+  --blue-soft: #8fb6f2;  /* mid tone — links, typed text, eyebrows */
+  --blue-soft-dim: #24405f;
+  --blue-muted: #6b85b3; /* deepest — tertiary tags, quiet accents */
+  --blue-muted-dim: #223350;
 
   /* ---- type ---- */
   --font-display: "Space Grotesk", "Inter", sans-serif;
@@ -85,12 +87,12 @@ ul {
 }
 
 ::selection {
-  background: var(--amber);
-  color: #14110a;
+  background: var(--blue);
+  color: #0a1220;
 }
 
 :focus-visible {
-  outline: 2px solid var(--amber);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -110,7 +112,7 @@ ul {
 .section-eyebrow {
   font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--teal);
+  color: var(--blue-soft);
   letter-spacing: 0.06em;
   margin-bottom: 14px;
   display: flex;
@@ -122,7 +124,7 @@ ul {
   content: "";
   width: 18px;
   height: 1px;
-  background: var(--teal);
+  background: var(--blue-soft);
   display: inline-block;
 }
 

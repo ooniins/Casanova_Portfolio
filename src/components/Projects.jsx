@@ -1,5 +1,7 @@
 import Icon from "./Icon";
 import { projects } from "../data/portfolioData";
+import "../styles/shared.css";
+import "./Projects.css";
 
 export default function Projects() {
   return (

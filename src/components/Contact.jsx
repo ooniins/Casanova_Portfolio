@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Icon from "./Icon";
 import { profile, socials } from "../data/portfolioData";
+import "../styles/shared.css";
+import "./Contact.css";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });

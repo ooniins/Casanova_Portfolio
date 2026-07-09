@@ -1,5 +1,6 @@
 import { profile } from "../data/portfolioData";
 import { useClock } from "../hooks/useClock";
+import "./Footer.css";
 
 export default function Footer() {
   const { date } = useClock();

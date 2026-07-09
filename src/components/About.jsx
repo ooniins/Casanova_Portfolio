@@ -1,6 +1,8 @@
 import Icon from "./Icon";
 import { useTypedText } from "../hooks/useTypedText";
 import { profile, socials } from "../data/portfolioData";
+import "../styles/shared.css";
+import "./About.css";
 
 export default function About() {
   const typed = useTypedText(profile.roles);
@@ -23,8 +25,8 @@ export default function About() {
             <a className="btn btn--primary" href={profile.resumeUrl} download>
               Download résumé
             </a>
-            
-            <a className="btn btn--ghost"
+            <a
+              className="btn btn--ghost"
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
