@@ -30,8 +30,8 @@ export const profile = {
 export const socials = [
   { label: "Email", value: "gabrielcasanovaq@gmail.com", href: "mailto:gabrielcasanovaq@gmail.com", icon: "mail" },
   { label: "GitHub", value: "@ooniins", href: "https://github.com/ooniins", icon: "github" },
-  { label: "LinkedIn", value: "in/niño-gabriel-casanova", href: "https://linkedin.com/in/niño-gabriel-casanova", icon: "linkedin" },
-  { label: "Twitter / X", value: "@zogratis", href: "https://x.com/zogratis", icon: "x" },
+  { label: "LinkedIn", value: "in/niño-gabriel-casanova-a824b0389", href: "https://linkedin.com/in/niño-gabriel-casanova-a824b0389", icon: "linkedin" },
+  { label: "Twitter / X", value: "@Itadori200423", href: "https://x.com/Itadori200423", icon: "x" },
 ];
 
 export const projects = [
