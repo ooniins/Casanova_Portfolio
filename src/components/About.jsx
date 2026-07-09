@@ -38,14 +38,20 @@ export default function About() {
           </div>
 
           <ul className="hero__socials">
-            {socials.map((s) => (
-              <li key={s.label}>
-                <a href={s.href} target="_blank" rel="noreferrer" aria-label={s.label}>
-                  <Icon name={s.icon} size={17} />
-                  <span>{s.value}</span>
-                </a>
-              </li>
-            ))}
+            {socials.map((s) => {
+              // Same fix as the Contact section: route the email entry through
+              // Gmail compose instead of a bare mailto:, which leaves a blank
+              // tab open if the visitor has no default mail app configured.
+              const href = s.icon === "mail" ? `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(s.value)}` : s.href;
+              return (
+                <li key={s.label}>
+                  <a href={href} target="_blank" rel="noreferrer" aria-label={s.label}>
+                    <Icon name={s.icon} size={17} />
+                    <span>{s.value}</span>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
 

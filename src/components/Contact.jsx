@@ -17,7 +17,10 @@ export default function Contact() {
     const body = encodeURIComponent(
       `${form.message}\n\n— ${form.name || "Anonymous"} (${form.email || "no email given"})`
     );
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    // Opens Gmail's web compose window directly (in a new tab), addressed to you,
+    // instead of relying on the visitor's OS having a default mail app configured.
+    const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
+    window.open(gmailComposeUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -28,17 +31,23 @@ export default function Contact() {
 
         <div className="contact-grid">
           <div className="contact-cards">
-            {socials.map((s) => (
-              <a className="contact-card" href={s.href} target="_blank" rel="noreferrer" key={s.label}>
-                <span className="contact-card__icon">
-                  <Icon name={s.icon} size={18} />
-                </span>
-                <span>
-                  <span className="contact-card__label">{s.label}</span>
-                  <span className="contact-card__value">{s.value}</span>
-                </span>
-              </a>
-            ))}
+            {socials.map((s) => {
+              // For the email card specifically, use a Gmail compose link instead of
+              // a bare mailto: — mailto opens a blank tab with nothing in it if the
+              // visitor's OS has no default mail app configured.
+              const cardHref = s.icon === "mail" ? `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(s.value)}` : s.href;
+              return (
+                <a className="contact-card" href={cardHref} target="_blank" rel="noreferrer" key={s.label}>
+                  <span className="contact-card__icon">
+                    <Icon name={s.icon} size={18} />
+                  </span>
+                  <span>
+                    <span className="contact-card__label">{s.label}</span>
+                    <span className="contact-card__value">{s.value}</span>
+                  </span>
+                </a>
+              );
+            })}
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
@@ -67,7 +76,7 @@ export default function Contact() {
               />
             </label>
             <div className="contact-form__footer">
-              <span>opens your email client</span>
+              <span>opens Gmail in a new tab</span>
               <button className="btn btn--primary" type="submit">
                 Send message →
               </button>
