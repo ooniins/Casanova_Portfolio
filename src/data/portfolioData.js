@@ -1,9 +1,9 @@
 export const profile = {
   name: "Niño Gabriel C. Casanova",
   roles: [
-    "Aspiring Data engineer",
-    "building for the web",
-    "open to opportunities",
+    "Aspiring Data Engineer",
+    "Building for the web",
+    "Open to opportunities",
   ],
   location: "Lipa, Batangas, Philippines",
   tagline:
