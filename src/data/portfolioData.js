@@ -5,13 +5,13 @@
 // ─────────────────────────────────────────────────────────────
 
 export const profile = {
-  name: "Jordan Reyes",
+  name: "Niño Gabriel C. Casanova",
   roles: [
-    "software engineer",
+    "Data engineer",
     "building for the web",
     "open to opportunities",
   ],
-  location: "Manila, Philippines",
+  location: "Lipa, Batangas, Philippines",
   tagline:
     "I build products at the intersection of design and engineering — clean frontends backed by systems that hold up.",
   bio: [
@@ -19,19 +19,19 @@ export const profile = {
     "Right now I'm focused on full-stack web apps: React on the front, Node or Python on the back, and enough DevOps to deploy it myself.",
   ],
   education: {
-    school: "Your University",
+    school: "De La Salle Lipa",
     program: "B.S. Computer Science",
     period: "Expected 2027",
   },
   resumeUrl: "/resume.pdf",
-  avatarInitial: "JR",
+  avatarInitial: "NC",
 };
 
 export const socials = [
-  { label: "Email", value: "you@example.com", href: "mailto:you@example.com", icon: "mail" },
-  { label: "GitHub", value: "@yourhandle", href: "https://github.com/yourhandle", icon: "github" },
-  { label: "LinkedIn", value: "in/yourhandle", href: "https://linkedin.com/in/yourhandle", icon: "linkedin" },
-  { label: "Twitter / X", value: "@yourhandle", href: "https://x.com/yourhandle", icon: "x" },
+  { label: "Email", value: "gabrielcasanovaq@gmail.com", href: "mailto:gabrielcasanovaq@gmail.com", icon: "mail" },
+  { label: "GitHub", value: "@ooniins", href: "https://github.com/ooniins", icon: "github" },
+  { label: "LinkedIn", value: "in/niño-gabriel-casanova", href: "https://linkedin.com/in/niño-gabriel-casanova", icon: "linkedin" },
+  { label: "Twitter / X", value: "@zogratis", href: "https://x.com/zogratis", icon: "x" },
 ];
 
 export const projects = [
