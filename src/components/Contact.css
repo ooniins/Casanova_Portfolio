@@ -58,11 +58,11 @@
 .contact-form {
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 28px;
+  padding: 22px;
   background: var(--bg-raised);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .contact-form__row {

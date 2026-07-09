@@ -42,10 +42,10 @@
 }
 
 .project-card__body {
-  padding: 22px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   flex: 1;
 }
 

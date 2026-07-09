@@ -1,13 +1,13 @@
 .hero {
-  padding-top: calc(var(--nav-height) + 72px);
+  padding-top: calc(var(--nav-height) + 40px);
 }
 
 .hero__grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 56px;
+  gap: 40px;
   align-items: start;
-  margin-bottom: 88px;
+  margin-bottom: 48px;
 }
 
 .hero__heading {
@@ -46,13 +46,13 @@
   color: var(--ink-dim);
   font-size: 17px;
   max-width: 46ch;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .hero__actions {
   display: flex;
   gap: 12px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
@@ -80,7 +80,7 @@
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 28px;
+  padding: 22px;
 }
 
 .hero__avatar {
@@ -95,7 +95,7 @@
   font-weight: 600;
   font-size: 20px;
   color: var(--blue);
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .hero__facts {
@@ -126,13 +126,13 @@
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 36px;
+  padding: 28px;
 }
 
 .bio-panel__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 24px;
 }
 
 .bio-panel__text {

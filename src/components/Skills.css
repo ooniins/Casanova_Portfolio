@@ -1,11 +1,11 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 48px;
+  gap: 26px 40px;
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 36px;
+  padding: 28px;
 }
 
 .skills-group__title {
@@ -21,6 +21,6 @@
 @media (max-width: 780px) {
   .skills-grid {
     grid-template-columns: 1fr;
-    padding: 26px;
+    padding: 20px;
   }
 }
