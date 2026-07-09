@@ -1,22 +1,16 @@
-// ─────────────────────────────────────────────────────────────
-// EVERYTHING ON THE SITE IS EDITED HERE. Replace the placeholder
-// values below with your own info — you shouldn't need to touch
-// any component files just to update content.
-// ─────────────────────────────────────────────────────────────
-
 export const profile = {
   name: "Niño Gabriel C. Casanova",
   roles: [
-    "Data engineer",
+    "Aspiring Data engineer",
     "building for the web",
     "open to opportunities",
   ],
   location: "Lipa, Batangas, Philippines",
   tagline:
-    "I build products at the intersection of design and engineering — clean frontends backed by systems that hold up.",
+    "I'm a aspiring data engineer who loves building for the web — turning raw data into pipelines, and pipelines into products people actually use.",
   bio: [
-    "I'm a software engineer who likes shipping things end to end — from the interface someone actually touches down to the API and data layer underneath it.",
-    "Right now I'm focused on full-stack web apps: React on the front, Node or Python on the back, and enough DevOps to deploy it myself.",
+   "I'm a aspiring data engineer at heart, but I love building for the web just as much — the pipelines that clean and move data, and the interfaces that make it usable, feel like two halves of the same problem to me.",
+   "Right now I'm focused on learning machine learning and data science, and I stay genuinely open to opportunities — new tools, new domains, new problems to learn from. If it means growing as an engineer, I'm in.",
   ],
   education: {
     school: "De La Salle Lipa",
