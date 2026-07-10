@@ -1,16 +1,16 @@
 export const profile = {
   name: "Niño Gabriel C. Casanova",
   roles: [
-    "Aspiring Data Engineer",
-    "Building for the web",
-    "Open to opportunities",
+    "data engineer",
+    "building for the web",
+    "open to opportunities",
   ],
   location: "Lipa, Batangas, Philippines",
   tagline:
-    "I'm a aspiring data engineer who loves building for the web — turning raw data into pipelines, and pipelines into products people actually use.",
+    "I'm a data engineer who loves building for the web — turning raw data into pipelines, and pipelines into products people actually use.",
   bio: [
-   "I'm a aspiring data engineer at heart, but I love building for the web just as much — the pipelines that clean and move data, and the interfaces that make it usable, feel like two halves of the same problem to me.",
-   "Right now I'm focused on learning machine learning and data science, and I stay genuinely open to opportunities — new tools, new domains, new problems to learn from. If it means growing as an engineer, I'm in.",
+    "I'm a data engineer at heart, but I love building for the web just as much — the pipelines that clean and move data, and the interfaces that make it usable, feel like two halves of the same problem to me.",
+    "I'm still early in my career, and I stay genuinely open to opportunities — new tools, new domains, new problems to learn from. If it means growing as an engineer, I'm in.",
   ],
   education: {
     school: "De La Salle Lipa",
@@ -18,6 +18,9 @@ export const profile = {
     period: "Expected 2027",
   },
   resumeUrl: "/resume.pdf",
+  // Path to your profile photo, placed in the public/ folder (e.g. public/avatar.jpg -> "/avatar.jpg").
+  // Leave as null to keep showing the "NC" initials instead.
+  avatarUrl: "/avatar.jpeg",
   avatarInitial: "NC",
 };
 

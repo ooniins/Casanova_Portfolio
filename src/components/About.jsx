@@ -56,7 +56,13 @@ export default function About() {
         </div>
 
         <aside className="hero__card">
-          <div className="hero__avatar">{profile.avatarInitial}</div>
+          <div className="hero__avatar">
+            {profile.avatarUrl ? (
+              <img src={profile.avatarUrl} alt={profile.name} className="hero__avatar-img" />
+            ) : (
+              profile.avatarInitial
+            )}
+          </div>
           <dl className="hero__facts">
             <div>
               <dt>Location</dt>

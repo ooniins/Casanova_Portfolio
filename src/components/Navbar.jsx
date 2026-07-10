@@ -33,7 +33,13 @@ export default function Navbar() {
             handleNav("about");
           }}
         >
-          <span className="navbar__logo-mark">{profile.avatarInitial}</span>
+          <span className="navbar__logo-mark">
+            {profile.avatarUrl ? (
+              <img src={profile.avatarUrl} alt={profile.name} className="navbar__logo-img" />
+            ) : (
+              profile.avatarInitial
+            )}
+          </span>
           <span className="navbar__logo-text">{profile.name}</span>
         </a>
 
