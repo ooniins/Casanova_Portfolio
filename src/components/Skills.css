@@ -18,6 +18,12 @@
   border-bottom: 1px solid var(--line-soft);
 }
 
+/* if there's an odd number of groups, let the last one span both columns
+   instead of leaving it stranded alone on one side */
+.skills-group:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 780px) {
   .skills-grid {
     grid-template-columns: 1fr;

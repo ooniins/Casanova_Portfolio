@@ -81,18 +81,22 @@ export const projects = [
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "SQL"],
+    items: ["JavaScript", "TypeScript", "Python", "C++", "PHP", "R"],
   },
   {
     title: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "HTML/CSS"],
+    items: ["React", "React Native (Expo)", "Next.js", "Tailwind CSS", "HTML", "CSS"],
   },
   {
-    title: "Backend & Data",
-    items: ["Node.js", "FastAPI", "PostgreSQL", "Supabase"],
+    title: "Backend & Database",
+    items: ["Node.js", "Express", "Supabase", "PostgreSQL"],
+  },
+  {
+    title: "AI & Machine Learning",
+    items: ["OpenAI", "Python", "R"],
   },
   {
     title: "Tools & Workflow",
-    items: ["Git & GitHub", "Docker", "Figma", "VS Code"],
+    items: ["Git & GitHub", "Figma", "EAS Build", "VS Code", "Vercel", "Canva", "NPM", "Claude", "GitHub Copilot"],
   },
 ];
