@@ -78,6 +78,14 @@ export const projects = [
   },
 ];
 
+// Display labels for the auto-advancing category carousel in the Certifications
+// section. Each maps to a "category" value used in the certifications array above.
+// Rename the labels to whatever you like — nothing else needs to change.
+export const certificationGroups = [
+  { label: "Associate Data Scientist in R", category: "R" },
+  { label: "Data Analyst in Python", category: "Python" },
+];
+
 export const certifications = [
   { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "Python" },
   { title: "Introduction to R", issuer: "DataCamp", date: "Mar 2026", hours: "4 hrs", category: "R" },
