@@ -79,21 +79,25 @@ export const projects = [
 ];
 
 // Display labels for the auto-advancing category carousel in the Certifications
-// section. Each maps to a "category" value used in the certifications array above.
+// section. Each maps to a "category" value used in the certifications array below.
 // Rename the labels to whatever you like — nothing else needs to change.
 export const certificationGroups = [
   { label: "Associate Data Scientist in R", category: "R" },
   { label: "Data Analyst in Python", category: "Python" },
+  { label: "Associate Python Developer", category: "PythonDev" },
+  { label: "GitHub Foundations", category: "GitHub" },
 ];
 
 export const certifications = [
-  { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "Python" },
+  { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "PythonDev" },
   { title: "Introduction to R", issuer: "DataCamp", date: "Mar 2026", hours: "4 hrs", category: "R" },
   { title: "Intermediate R", issuer: "DataCamp", date: "Apr 2026", hours: "6 hrs", category: "R" },
   { title: "Introduction to the Tidyverse", issuer: "DataCamp", date: "Apr 2026", hours: "4 hrs", category: "R" },
   { title: "Data Manipulation with dplyr", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "R" },
   { title: "Introduction to Python", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "Python" },
   { title: "Intermediate Python", issuer: "DataCamp", date: "Jun 2026", hours: "4 hrs", category: "Python" },
+  { title: "Data Manipulation with pandas", issuer: "DataCamp", date: "Jul 2026", hours: "4 hrs", category: "Python" },
+  { title: "Introduction to Git", issuer: "DataCamp", date: "Jul 2026", hours: "2 hrs", category: "GitHub" },
 ];
 
 export const skillGroups = [
