@@ -9,9 +9,9 @@ const NAV_ITEMS = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
+  { id: "certifications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ];
-
 export default function Navbar() {
   const active = useActiveSection(NAV_ITEMS.map((item) => item.id));
   const { time } = useClock();

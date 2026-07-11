@@ -78,6 +78,16 @@ export const projects = [
   },
 ];
 
+export const certifications = [
+  { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "Python" },
+  { title: "Introduction to R", issuer: "DataCamp", date: "Mar 2026", hours: "4 hrs", category: "R" },
+  { title: "Intermediate R", issuer: "DataCamp", date: "Apr 2026", hours: "6 hrs", category: "R" },
+  { title: "Introduction to the Tidyverse", issuer: "DataCamp", date: "Apr 2026", hours: "4 hrs", category: "R" },
+  { title: "Data Manipulation with dplyr", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "R" },
+  { title: "Introduction to Python", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "Python" },
+  { title: "Intermediate Python", issuer: "DataCamp", date: "Jun 2026", hours: "4 hrs", category: "Python" },
+];
+
 export const skillGroups = [
   {
     title: "Languages",
