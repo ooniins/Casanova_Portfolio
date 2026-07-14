@@ -94,35 +94,6 @@
   margin-bottom: 28px;
 }
 
-.cert-tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 28px;
-}
-
-.cert-tag {
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--blue-soft-dim);
-  color: var(--blue-soft);
-  background: rgba(143, 182, 242, 0.07);
-  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
-}
-
-.cert-tag:hover {
-  border-color: var(--ink-faint);
-  color: var(--ink);
-}
-
-.cert-tag.is-active {
-  border-color: var(--blue-dim);
-  color: var(--blue);
-  background: rgba(91, 155, 255, 0.09);
-}
-
 .cert-carousel {
   display: flex;
   align-items: center;
@@ -249,6 +220,21 @@
   height: 3px;
   border-radius: 50%;
   background: var(--ink-faint);
+}
+
+.cert-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--blue-soft);
+  transition: color 0.15s ease;
+}
+
+.cert-card__link:hover {
+  color: var(--blue);
 }
 
 .cert-dots {

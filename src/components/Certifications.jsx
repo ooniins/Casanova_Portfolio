@@ -127,19 +127,6 @@ export default function Certifications() {
         {/* Nothing below renders at all until a category has been clicked */}
         {activeCategory && currentCert && (
           <>
-            <ul className="cert-tag-row">
-              {filteredCerts.map((c, i) => (
-                <li key={c.title}>
-                  <button
-                    className={`cert-tag ${i === certIndex ? "is-active" : ""}`}
-                    onClick={() => setCertIndex(i)}
-                  >
-                    {c.title}
-                  </button>
-                </li>
-              ))}
-            </ul>
-
             <div
               className="cert-carousel"
               onMouseEnter={() => setIsCertPaused(true)}
@@ -164,6 +151,16 @@ export default function Certifications() {
                     <span className="cert-card__meta-dot" />
                     <span>{currentCert.hours}</span>
                   </div>
+                  {currentCert.credentialUrl && (
+                    <a
+                      className="cert-card__link"
+                      href={currentCert.credentialUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Icon name="external" size={14} /> View certificate
+                    </a>
+                  )}
                 </div>
                 {!prefersReducedMotion && filteredCerts.length > 1 && (
                   <span className={`cert-card__progress ${isCertPaused ? "is-paused" : ""}`} />

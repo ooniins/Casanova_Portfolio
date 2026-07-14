@@ -88,16 +88,21 @@ export const certificationGroups = [
   { label: "GitHub Foundations", category: "GitHub" },
 ];
 
+// Add credentialUrl to any entry once you have the real link — it makes a
+// "View certificate" link appear on that card, opening in a new tab. To get
+// the link: log into DataCamp -> your profile -> Certificates -> open the
+// certificate -> use its "Share" or "View" option to copy the public URL.
+// Leave it null (or omit it) to hide the link for that certificate.
 export const certifications = [
-  { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "PythonDev" },
-  { title: "Introduction to R", issuer: "DataCamp", date: "Mar 2026", hours: "4 hrs", category: "R" },
-  { title: "Intermediate R", issuer: "DataCamp", date: "Apr 2026", hours: "6 hrs", category: "R" },
-  { title: "Introduction to the Tidyverse", issuer: "DataCamp", date: "Apr 2026", hours: "4 hrs", category: "R" },
-  { title: "Data Manipulation with dplyr", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "R" },
-  { title: "Introduction to Python", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "Python" },
-  { title: "Intermediate Python", issuer: "DataCamp", date: "Jun 2026", hours: "4 hrs", category: "Python" },
-  { title: "Data Manipulation with pandas", issuer: "DataCamp", date: "Jul 2026", hours: "4 hrs", category: "Python" },
-  { title: "Introduction to Git", issuer: "DataCamp", date: "Jul 2026", hours: "2 hrs", category: "GitHub" },
+  { title: "Introduction to Python for Developers", issuer: "DataCamp", date: "Feb 2026", hours: "3 hrs", category: "PythonDev", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/a5777940cd7dc08dd9701866f9d461714398924d?raw=1" },
+  { title: "Introduction to R", issuer: "DataCamp", date: "Mar 2026", hours: "4 hrs", category: "R", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/3574d811f06d852c52c8f7d843dd985848a5018a?raw=1" },
+  { title: "Intermediate R", issuer: "DataCamp", date: "Apr 2026", hours: "6 hrs", category: "R", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/2b759e2694f73f1a1c1f4df317586e98ae534109?raw=1" },
+  { title: "Introduction to the Tidyverse", issuer: "DataCamp", date: "Apr 2026", hours: "4 hrs", category: "R", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/c4c3619e382abddda437a24836051efc28cdbb28?raw=1" },
+  { title: "Data Manipulation with dplyr", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "R", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/93cd7dda0af9c177a26ed439fcf4e5b77b1ea6fc?raw=1" },
+  { title: "Introduction to Python", issuer: "DataCamp", date: "May 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/ca59fd3e2f46942c80604a812d67608905b69f6f?raw=1" },
+  { title: "Intermediate Python", issuer: "DataCamp", date: "Jun 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/ca3069847888fb6c23531d2097358fe9953c315f?raw=1" },
+  { title: "Data Manipulation with pandas", issuer: "DataCamp", date: "Jul 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/c492fee86d74b9431d760c31f0d4d2e875531f86?raw=1" },
+  { title: "Introduction to Git", issuer: "DataCamp", date: "Jul 2026", hours: "2 hrs", category: "GitHub", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/84ed2974bc2b0af16061e4f255d06726f9928ab2?raw=1" },
 ];
 
 export const skillGroups = [
