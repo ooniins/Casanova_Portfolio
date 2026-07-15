@@ -4,7 +4,7 @@
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.15fr 1.35fr;
   gap: 40px;
   align-items: start;
   margin-bottom: 48px;
@@ -81,15 +81,32 @@
   color: var(--ink);
 }
 
+/* ===== Southeast Layout Container ===== */
 .hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  margin-left: auto;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ===== Levitating Profile Picture Placeholder ===== */
+.hero__avatar-panel {
+  flex: 0 0 auto;
+  width: 320px; /* Made your pic a bit bigger! */
+  margin-left: 35px; /* Shifted the pic slightly to the right */
+  align-self: flex-start;
   background: var(--bg-raised);
   border: 1px solid var(--line);
   border-radius: 14px;
-  padding: 20px;
+  padding: 12px;
   min-width: 0;
+  opacity: 0;
+  animation: panel-in 0.5s ease forwards, levitate-panel 6s ease-in-out infinite 0.5s;
 }
 
-/* ===== Large photo placeholder ===== */
 .hero__avatar {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -98,7 +115,6 @@
   border: 1px solid var(--line);
   display: grid;
   place-items: center;
-  margin-bottom: 18px;
   overflow: hidden;
 }
 
@@ -116,13 +132,75 @@
   color: var(--blue);
 }
 
-/* ===== Code-styled info block ===== */
+/* ===== Compact Code-styled info block ===== */
 .code-card {
+  flex: 0 0 auto;
+  width: 320px; /* Kept compact and neat */
+  align-self: flex-end;
+  margin-top: -38px; /* Tucks beautifully underneath your larger frame */
   border: 1px solid var(--line);
   border-radius: 10px;
   overflow: hidden;
   background: var(--bg-inset);
   min-width: 0;
+  opacity: 0;
+  transform: translateX(14px);
+  animation: card-in 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards, levitate-card 6s ease-in-out infinite 0.9s;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.code-card:hover {
+  border-color: var(--blue-soft-dim);
+  box-shadow: 0 14px 32px -12px rgba(91, 155, 255, 0.35);
+}
+
+/* ===== Animations ===== */
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes card-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes levitate-panel {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes levitate-card {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-11px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__avatar-panel,
+  .code-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .code-card:hover {
+    transform: none;
+  }
 }
 
 .code-card__bar {
@@ -139,6 +217,26 @@
   height: 7px;
   border-radius: 50%;
   background: var(--blue);
+  box-shadow: 0 0 0 0 rgba(91, 155, 255, 0.55);
+  animation: dot-pulse 2.2s ease-out infinite;
+}
+
+@keyframes dot-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(91, 155, 255, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(91, 155, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(91, 155, 255, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-card__dot {
+    animation: none;
+  }
 }
 
 .code-card__path {
@@ -256,5 +354,29 @@
   }
   .bio-panel__grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__card {
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+  .hero__avatar-panel {
+    flex-basis: auto;
+    width: 55%;
+    max-width: 240px;
+    margin-left: 0;
+    align-self: center;
+  }
+  .code-card {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 100%;
+    align-self: stretch;
+    margin-top: 0;
   }
 }

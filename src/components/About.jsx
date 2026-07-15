@@ -25,7 +25,6 @@ export default function About() {
             <a className="btn btn--primary" href={profile.resumeUrl} download>
               Download résumé
             </a>
-            
             <a
               className="btn btn--ghost"
               href="#contact"
@@ -40,9 +39,6 @@ export default function About() {
 
           <ul className="hero__socials">
             {socials.map((s) => {
-              // Same fix as the Contact section: route the email entry through
-              // Gmail compose instead of a bare mailto:, which leaves a blank
-              // tab open if the visitor has no default mail app configured.
               const href = s.icon === "mail" ? `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(s.value)}` : s.href;
               return (
                 <li key={s.label}>
@@ -57,12 +53,14 @@ export default function About() {
         </div>
 
         <aside className="hero__card">
-          <div className="hero__avatar">
-            {profile.avatarUrl ? (
-              <img src={profile.avatarUrl} alt={profile.name} className="hero__avatar-img" />
-            ) : (
-              <span className="hero__avatar-fallback">{profile.avatarInitial}</span>
-            )}
+          <div className="hero__avatar-panel">
+            <div className="hero__avatar">
+              {profile.avatarUrl ? (
+                <img src={profile.avatarUrl} alt={profile.name} className="hero__avatar-img" />
+              ) : (
+                <span className="hero__avatar-fallback">{profile.avatarInitial}</span>
+              )}
+            </div>
           </div>
 
           <div className="code-card">
@@ -76,7 +74,7 @@ export default function About() {
                 <span className="code-line" style={{ "--delay": "0ms" }}>
                   <span className="code-line__num">01</span>
                   <span className="code-line__content">
-                    <span className="code-tok-kw">const</span> <span className="code-tok-var">profile</span> = {"{"}
+                    const <span className="code-tok-var">profile</span> = {"{"}
                   </span>
                 </span>
 
