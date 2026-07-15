@@ -25,6 +25,7 @@ export default function About() {
             <a className="btn btn--primary" href={profile.resumeUrl} download>
               Download résumé
             </a>
+            
             <a
               className="btn btn--ghost"
               href="#contact"
@@ -60,25 +61,57 @@ export default function About() {
             {profile.avatarUrl ? (
               <img src={profile.avatarUrl} alt={profile.name} className="hero__avatar-img" />
             ) : (
-              profile.avatarInitial
+              <span className="hero__avatar-fallback">{profile.avatarInitial}</span>
             )}
           </div>
-          <dl className="hero__facts">
-            <div>
-              <dt>Location</dt>
-              <dd>{profile.location}</dd>
+
+          <div className="code-card">
+            <div className="code-card__bar">
+              <span className="code-card__dot" />
+              <span className="code-card__path">profile.json</span>
             </div>
-            <div>
-              <dt>Education</dt>
-              <dd>
-                {profile.education.school}
-                <br />
-                <span className="hero__facts-sub">
-                  {profile.education.program} · {profile.education.period}
+
+            <pre className="code-card__body" aria-hidden="true">
+              <code>
+                <span className="code-line" style={{ "--delay": "0ms" }}>
+                  <span className="code-line__num">01</span>
+                  <span className="code-line__content">
+                    <span className="code-tok-kw">const</span> <span className="code-tok-var">profile</span> = {"{"}
+                  </span>
                 </span>
-              </dd>
-            </div>
-          </dl>
+
+                {[
+                  { key: "location", value: profile.location },
+                  { key: "school", value: profile.education.school },
+                  { key: "program", value: profile.education.program },
+                  { key: "status", value: profile.education.period },
+                ].map((line, i) => (
+                  <span className="code-line" key={line.key} style={{ "--delay": `${(i + 1) * 90}ms` }}>
+                    <span className="code-line__num">{String(i + 2).padStart(2, "0")}</span>
+                    <span className="code-line__content code-line__content--indent">
+                      <span className="code-tok-key">{line.key}</span>
+                      <span className="code-tok-punc">: </span>
+                      <span className="code-tok-str">"{line.value}"</span>
+                      <span className="code-tok-punc">,</span>
+                    </span>
+                  </span>
+                ))}
+
+                <span className="code-line" style={{ "--delay": "450ms" }}>
+                  <span className="code-line__num">06</span>
+                  <span className="code-line__content">
+                    <span className="code-tok-punc">{"};"}</span>
+                    <span className="code-cursor" />
+                  </span>
+                </span>
+              </code>
+            </pre>
+
+            <span className="sr-only">
+              Location: {profile.location}. Education: {profile.education.school}, {profile.education.program},{" "}
+              {profile.education.period}.
+            </span>
+          </div>
         </aside>
       </div>
 
