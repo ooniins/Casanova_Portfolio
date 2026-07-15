@@ -112,11 +112,11 @@ export const skillGroups = [
   },
   {
     title: "Frontend",
-    items: ["React", "React Native (Expo)", "Next.js", "Tailwind CSS", "HTML", "CSS"],
+    items: ["React", "React Native (Expo)", "Next.js", "Tailwind CSS", "HTML", "CSS", "TypeScript", "JavaScript"],
   },
   {
     title: "Backend & Database",
-    items: ["Node.js", "Express", "Supabase", "PostgreSQL"],
+    items: ["Node.js", "Express", "Supabase", "PostgreSQL", "Firebase"],
   },
   {
     title: "AI & Machine Learning",
