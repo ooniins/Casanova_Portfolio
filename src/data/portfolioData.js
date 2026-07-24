@@ -103,6 +103,8 @@ export const certifications = [
   { title: "Intermediate Python", issuer: "DataCamp", date: "Jun 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/ca3069847888fb6c23531d2097358fe9953c315f?raw=1" },
   { title: "Data Manipulation with pandas", issuer: "DataCamp", date: "Jul 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/c492fee86d74b9431d760c31f0d4d2e875531f86?raw=1" },
   { title: "Introduction to Git", issuer: "DataCamp", date: "Jul 2026", hours: "2 hrs", category: "GitHub", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/84ed2974bc2b0af16061e4f255d06726f9928ab2?raw=1" },
+  { title: "Joining Data with pandas", issuer: "DataCamp", date: "Jul 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/9e0fd71e7f9397f1f4f736ed41affb7a84391120?raw=1" },
+  { title: "Intermediate Git", issuer: "DataCamp", date: "Jul 2026", hours: "2 hrs", category: "GitHub", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/66ddbde01ca058690b0d9296a2d1e09d00566d89?raw=1" },  
 ];
 
 export const skillGroups = [
