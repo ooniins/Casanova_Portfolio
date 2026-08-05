@@ -1,5 +1,7 @@
 :root {
   color-scheme: dark;
+  position: relative;
+  z-index: 0;
 
   /* ---- palette: monochromatic blue ---- */
   --bg: #0a0e17;

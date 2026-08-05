@@ -1,0 +1,28 @@
+.grid-cursor-highlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: rgba(27, 56, 104, 0.55); /* navy blue fill, matches --blue-dim */
+  border: 1px solid rgba(91, 155, 255, 0.45); /* soft --blue edge */
+  border-radius: 3px;
+  box-shadow: 0 0 16px rgba(91, 155, 255, 0.25);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  will-change: transform;
+}
+
+.grid-cursor-highlight.is-visible {
+  opacity: 1;
+}
+
+/* Hide entirely on touch devices — there's no cursor to track, and the
+   fixed-position div would otherwise sit inert at the top-left corner. */
+@media (hover: none) and (pointer: coarse) {
+  .grid-cursor-highlight {
+    display: none;
+  }
+}
