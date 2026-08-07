@@ -1,9 +1,7 @@
 :root {
   color-scheme: dark;
-  position: relative;
-  z-index: 0;
 
-  /* ---- palette: monochromatic blue ---- */
+  /* ---- palette: monochromatic blue (dark theme, default) ---- */
   --bg: #0a0e17;
   --bg-raised: #111a2c;
   --bg-inset: #0d1322;
@@ -14,13 +12,18 @@
   --ink-dim: #94a7c9;
   --ink-faint: #56698f;
 
-  /* three tints of the same blue hue — used for hierarchy, not variety */
-  --blue: #5b9bff;       /* brightest — primary actions, name, active nav */
-  --blue-dim: #1b3868;   /* dimmed fill behind --blue */
-  --blue-soft: #8fb6f2;  /* mid tone — links, typed text, eyebrows */
+  --blue: #5b9bff;
+  --blue-dim: #1b3868;
+  --blue-soft: #8fb6f2;
   --blue-soft-dim: #24405f;
-  --blue-muted: #6b85b3; /* deepest — tertiary tags, quiet accents */
+  --blue-muted: #6b85b3;
   --blue-muted-dim: #223350;
+
+  /* text color to place on top of a solid --blue background (buttons, selection) */
+  --blue-contrast: #0a1220;
+
+  /* navbar's translucent backdrop, kept in sync with --bg per theme */
+  --nav-bg: rgba(10, 14, 23, 0.82);
 
   /* ---- type ---- */
   --font-display: "Space Grotesk", "Inter", sans-serif;
@@ -32,8 +35,39 @@
   --nav-height: 68px;
 }
 
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* ---- palette: monochromatic blue (light theme) ---- */
+  --bg: #eef1f8;
+  --bg-raised: #ffffff;
+  --bg-inset: #e7ecf6;
+  --line: #d7deec;
+  --line-soft: #e6eaf3;
+
+  --ink: #10182b;
+  --ink-dim: #55617a;
+  --ink-faint: #8790a3;
+
+  --blue: #2f6fed;
+  --blue-dim: #dce7fc;
+  --blue-soft: #3f66c9;
+  --blue-soft-dim: #e6edfb;
+  --blue-muted: #5c6f96;
+  --blue-muted-dim: #eaeef6;
+
+  --blue-contrast: #ffffff;
+
+  --nav-bg: rgba(238, 241, 248, 0.82);
+}
+
 * {
   box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  z-index: 0;
 }
 
 html {
@@ -48,6 +82,7 @@ body {
   font-size: 16px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* faint grid texture across the whole page */
@@ -90,7 +125,7 @@ ul {
 
 ::selection {
   background: var(--blue);
-  color: #0a1220;
+  color: var(--blue-contrast);
 }
 
 :focus-visible {

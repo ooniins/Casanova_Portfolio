@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "./Icon";
+import ThemeToggle from "./ThemeToggle";
 import { useActiveSection } from "../hooks/useActiveSection";
 import { useClock } from "../hooks/useClock";
 import { profile } from "../data/portfolioData";
@@ -12,6 +13,7 @@ const NAV_ITEMS = [
   { id: "certifications", label: "Certifications" },
   { id: "contact", label: "Contact" },
 ];
+
 export default function Navbar() {
   const active = useActiveSection(NAV_ITEMS.map((item) => item.id));
   const { time } = useClock();
@@ -63,6 +65,8 @@ export default function Navbar() {
           <span className="navbar__dot" aria-hidden="true" />
           <span className="navbar__clock">{time}</span>
         </div>
+
+        <ThemeToggle />
 
         <button
           className="navbar__toggle"

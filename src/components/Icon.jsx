@@ -15,10 +15,7 @@ const paths = {
     />
   ),
   x: (
-    <path
-      d="m3 3 7.5 9.5L3.4 21H6l6-6.6L17 21h4l-8-9.9L20.3 3H18l-5.6 6.2L7 3H3Z"
-      fill="currentColor"
-    />
+    <path d="m3 3 7.5 9.5L3.4 21H6l6-6.6L17 21h4l-8-9.9L20.3 3H18l-5.6 6.2L7 3H3Z" fill="currentColor" />
   ),
   external: (
     <path d="M7 17 17 7M17 7H9M17 7v8" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -37,6 +34,22 @@ const paths = {
   ),
   close: (
     <path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+  ),
+  sun: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+      <circle cx="12" cy="12" r="4.2" />
+      <path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7" />
+    </g>
+  ),
+  moon: (
+    <path
+      d="M20.5 14.6A8.5 8.5 0 1 1 9.4 3.5a7 7 0 0 0 11.1 11.1Z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   ),
 };
 

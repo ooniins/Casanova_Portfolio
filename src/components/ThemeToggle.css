@@ -1,0 +1,21 @@
+.theme-toggle {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--ink-dim);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--blue-dim);
+  color: var(--blue);
+}
+
+.theme-toggle:active {
+  transform: scale(0.92);
+}
