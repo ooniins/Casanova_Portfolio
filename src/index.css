@@ -38,27 +38,29 @@
 [data-theme="light"] {
   color-scheme: light;
 
-  /* ---- palette: monochromatic blue (light theme) ---- */
-  --bg: #eef1f8;
-  --bg-raised: #ffffff;
-  --bg-inset: #e7ecf6;
-  --line: #d7deec;
-  --line-soft: #e6eaf3;
+  /* ---- palette: monochromatic blue (light theme) ----
+     mirrors the dark theme's navy hue, just lifted into light
+     values instead of dropping to white/gray ---- */
+  --bg: #dce8fb;
+  --bg-raised: #eaf2fd;
+  --bg-inset: #d2e2f8;
+  --line: #aec7ec;
+  --line-soft: #c4d8f3;
 
-  --ink: #10182b;
-  --ink-dim: #55617a;
-  --ink-faint: #8790a3;
+  --ink: #0f1f3d;
+  --ink-dim: #435a82;
+  --ink-faint: #7188b0;
 
   --blue: #2f6fed;
-  --blue-dim: #dce7fc;
-  --blue-soft: #3f66c9;
-  --blue-soft-dim: #e6edfb;
-  --blue-muted: #5c6f96;
-  --blue-muted-dim: #eaeef6;
+  --blue-dim: #c4d9f9;
+  --blue-soft: #2f5fc9;
+  --blue-soft-dim: #cddff9;
+  --blue-muted: #5271a8;
+  --blue-muted-dim: #d6e3f6;
 
   --blue-contrast: #ffffff;
 
-  --nav-bg: rgba(238, 241, 248, 0.82);
+  --nav-bg: rgba(220, 232, 251, 0.82);
 }
 
 * {

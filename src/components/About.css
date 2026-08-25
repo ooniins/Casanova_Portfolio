@@ -405,7 +405,34 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + 24px);
+  }
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+  .hero__card {
+    margin-left: 0;
+    max-width: 420px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 640px) {
+  .hero__tagline {
+    max-width: 100%;
+  }
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero__actions .btn {
+    justify-content: center;
+  }
   .hero__card {
     flex-direction: column;
     gap: 16px;
@@ -426,6 +453,16 @@
     max-width: 100%;
     align-self: stretch;
     margin-top: 0;
+  }
+  .code-card__body {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero__avatar-panel {
+    width: 70%;
+    max-width: 200px;
   }
 }
 
