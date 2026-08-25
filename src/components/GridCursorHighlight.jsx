@@ -16,8 +16,13 @@ export default function GridCursorHighlight() {
 
     // Replicates CSS `background-position: center` for a repeating tile,
     // so the highlight lines up exactly with the visible grid lines.
+    //
+    // Important: use documentElement.clientWidth (the actual viewport box the
+    // browser centers a fixed background against), NOT window.innerWidth —
+    // innerWidth includes the scrollbar's width, which was throwing this off
+    // by several pixels whenever a vertical scrollbar was present.
     const getOffsetX = () => {
-      const w = window.innerWidth;
+      const w = document.documentElement.clientWidth;
       let off = ((w - CELL) / 2) % CELL;
       if (off < 0) off += CELL;
       return off;

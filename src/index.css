@@ -25,6 +25,12 @@
   /* navbar's translucent backdrop, kept in sync with --bg per theme */
   --nav-bg: rgba(10, 14, 23, 0.82);
 
+  /* ---- decorative grid-cursor highlight (inverted per theme, so it
+       reads as a spotlight against the page background) ---- */
+  --grid-cursor-bg: rgba(143, 182, 242, 0.3);
+  --grid-cursor-border: rgba(234, 240, 252, 0.4);
+  --grid-cursor-glow: rgba(143, 182, 242, 0.28);
+
   /* ---- type ---- */
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -61,6 +67,12 @@
   --blue-contrast: #ffffff;
 
   --nav-bg: rgba(220, 232, 251, 0.82);
+
+  /* dark navy spotlight against the light background — inverted from
+     the pale spotlight used in dark mode */
+  --grid-cursor-bg: rgba(15, 31, 61, 0.32);
+  --grid-cursor-border: rgba(47, 111, 237, 0.5);
+  --grid-cursor-glow: rgba(15, 31, 61, 0.22);
 }
 
 * {
