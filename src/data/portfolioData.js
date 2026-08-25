@@ -87,6 +87,7 @@ export const certificationGroups = [
   { label: "Associate Python Developer", category: "PythonDev" },
   { label: "GitHub Foundations", category: "GitHub" },
   { label: "Google Project Management", category: "ProjectManagement" },
+  { label: "Hackathon Participation", category: "Hackathon" },
 ];
 
 // Add credentialUrl to any entry once you have the real link — it makes a
@@ -111,6 +112,7 @@ export const certifications = [
   { title: "Introduction to Statistics in Python", issuer: "DataCamp", date: "Aug 2026", hours: "4 hrs", category: "Python", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/513cbdfc094f6dad7bc9ae8491c1cb31c73cbcb8?raw=1" }, 
   { title: "GitHub Foundations", issuer: "DataCamp", date: "Aug 2026", hours: "9 hrs", category: "GitHub", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/track/a0b3d1691575e91ace15f15e17f13d3621f984b5?raw=1" }, 
   { title: "Foundations of Project Management", issuer: "Google CourseEra", date: "Aug 2026", hours: "13 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/QSD0XMSHM52V" }, 
+  { title: "EGOVPH Hackathon", issuer: "EGOVPH", date: "Jul 2026", hours: "48 hrs", category: "Hackathon", credentialUrl: null }, 
 ];
 
 export const skillGroups = [
