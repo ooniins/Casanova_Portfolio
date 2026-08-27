@@ -66,14 +66,14 @@ export const projects = [
     badge: null,
   },
   {
-    name: "Portfolio",
-    period: "2026 — Ongoing",
-    path: "casanova-portfolio.vercel.app",
+    name: "Diner28",
+    period: "2024 - 2025",
+    path: "diner28.vercel.app",
     description:
-      "The site you're looking at right now — a one-page portfolio built end-to-end with Vite and React, from layout to deployment.",
-    stack: ["React", "Vite", "JavaScript", "CSS"],
-    github: "https://github.com/ooniins/Casanova_Portfolio",
-    live: "https://casanova-portfolio.vercel.app",
+      "It's a restaurant's website with reservation booking built in, not just a static menu page — visitors can create an account, book a table, and the restaurant side has tools to manage capacity and bookings.",
+    stack: ["React", "Vite", "JavaScript", "Tailwind CSS", "MongoDB"],
+    github: "https://github.com/Lycos-Blanza/final-project-group3-webdevt",
+    live: "https://final-project-group3-webdevt-i9au.vercel.app",
     badge: null,
   },
 ];
