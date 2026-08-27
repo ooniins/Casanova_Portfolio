@@ -27,7 +27,7 @@ export const profile = {
 export const socials = [
   { label: "Email", value: "gabrielcasanovaq@gmail.com", href: "mailto:gabrielcasanovaq@gmail.com", icon: "mail" },
   { label: "GitHub", value: "@ooniins", href: "https://github.com/ooniins", icon: "github" },
-  { label: "LinkedIn", value: "in/niño-gabriel-casanova-a824b0389", href: "https://linkedin.com/in/niño-gabriel-casanova-a824b0389", icon: "linkedin" },
+  { label: "LinkedIn", value: "in/ooniins", href: "https://linkedin.com/in/ooniins", icon: "linkedin" },
   { label: "Twitter / X", value: "@Itadori200423", href: "https://x.com/Itadori200423", icon: "x" },
 ];
 
