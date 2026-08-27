@@ -88,6 +88,7 @@ export const certificationGroups = [
   { label: "GitHub Foundations", category: "GitHub" },
   { label: "Google Project Management", category: "ProjectManagement" },
   { label: "Hackathon Participation", category: "Hackathon" },
+  { label: "Large Language Model", category: "AI Agents" },
 ];
 
 // Add credentialUrl to any entry once you have the real link — it makes a
@@ -113,6 +114,8 @@ export const certifications = [
   { title: "GitHub Foundations", issuer: "DataCamp", date: "Aug 2026", hours: "9 hrs", category: "GitHub", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/track/a0b3d1691575e91ace15f15e17f13d3621f984b5?raw=1" }, 
   { title: "Foundations of Project Management", issuer: "Google CourseEra", date: "Aug 2026", hours: "13 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/QSD0XMSHM52V" }, 
   { title: "EGOVPH Hackathon", issuer: "EGOVPH", date: "Jul 2026", hours: "48 hrs", category: "Hackathon", credentialUrl: null }, 
+  { title: "Project Initiation: Starting a Successful Project", issuer: "Google CourseEra", date: "Aug 2026", hours: "15 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/UIJGJ65ATJQ0" }, 
+  { title: "Claude 101", issuer: "DataCamp", date: "Aug 2026", hours: "2 hrs", category: "AI Agents", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/0e85a38a0aca6f20a2a23c0018f3dc6b68a02504?raw=1" }, 
 ];
 
 export const skillGroups = [
