@@ -128,15 +128,19 @@ export const certifications = [
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "C++", "PHP", "R"],
+    items: ["JavaScript", "TypeScript", "Python", "C++", "PHP", "R", "SQL"],
   },
   {
     title: "Frontend",
-    items: ["React", "React Native (Expo)", "Next.js", "Tailwind CSS", "HTML", "CSS", "TypeScript", "JavaScript"],
+    items: ["React", "Vue", "Astro", "React Native (Expo)", "Next.js", "Tailwind CSS", "HTML", "CSS", "TypeScript", "JavaScript"],
   },
   {
     title: "Backend & Database",
-    items: ["Node.js", "Express", "Supabase", "PostgreSQL", "Firebase"],
+    items: ["Node.js", "Express", "Supabase", "SQL", "PostgreSQL", "Firebase"],
+  },
+  {
+    title: "Cloud",
+    items: ["Amazon Web Services (AWS)", "Cloud Computing"],
   },
   {
     title: "AI & Machine Learning",
@@ -144,6 +148,6 @@ export const skillGroups = [
   },
   {
     title: "Tools & Workflow",
-    items: ["Git & GitHub", "Figma", "EAS Build", "VS Code", "Vercel", "Canva", "NPM", "Claude", "GitHub Copilot"],
+    items: ["Git & GitHub", "Figma", "Arduino IDE", "EAS Build", "VS Code", "Vercel", "Canva", "NPM", "Claude", "GitHub Copilot"],
   },
 ];
