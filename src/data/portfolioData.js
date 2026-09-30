@@ -118,11 +118,11 @@ export const certifications = [
   { title: "EGOVPH Hackathon", issuer: "EGOVPH", date: "Jul 2026", hours: "48 hrs", category: "Hackathon", credentialUrl: null }, 
   { title: "Project Initiation: Starting a Successful Project", issuer: "Google CourseEra", date: "Aug 2026", hours: "15 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/UIJGJ65ATJQ0" }, 
   { title: "Claude 101", issuer: "DataCamp", date: "Aug 2026", hours: "2 hrs", category: "AI Agents", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/0e85a38a0aca6f20a2a23c0018f3dc6b68a02504?raw=1" }, 
-  { title: "Understanding Cloud Computing", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: null }, 
-  { title: "AWS Concepts", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: null }, 
-  { title: "AWS Cloud Technology and Services", issuer: "DataCamp", date: "Sep 2026", hours: "13 hrs", category: "AWS", credentialUrl: null }, 
-  { title: "Introduction to SQL", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "SQL", credentialUrl: null }, 
-  { title: "Project Planning: Putting It All Together", issuer: "Google CourseEra", date: "Sep 2026", hours: "10 hrs", category: "ProjectManagement", credentialUrl: null }, 
+  { title: "Understanding Cloud Computing", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/210f4bb520ff980da57d6cc8c1f417964b22748a?raw=1" }, 
+  { title: "AWS Concepts", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/742d0ad4bd1a187ab332a3d6fe80bb5d91b82c41?raw=1" }, 
+  { title: "AWS Cloud Technology and Services Concepts", issuer: "DataCamp", date: "Sep 2026", hours: "13 hrs", category: "AWS", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/3bd72c4d2f9d221ea23c5fee80bbebf37e66bff2?raw=1" }, 
+  { title: "Introduction to SQL", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "SQL", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/653f330a5e0041dec3fc75179c61f80d376532c4?raw=1" }, 
+  { title: "Project Planning: Putting It All Together", issuer: "Google CourseEra", date: "Sep 2026", hours: "10 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/Y08YR8K1ZHKF" }, 
 ];
 
 export const skillGroups = [
