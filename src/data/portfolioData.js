@@ -89,6 +89,8 @@ export const certificationGroups = [
   { label: "Google Project Management", category: "ProjectManagement" },
   { label: "Hackathon Participation", category: "Hackathon" },
   { label: "Large Language Model", category: "AI Agents" },
+  { label: "AWS", category: "AWS" },
+  { label: "SQL", category: "SQL" },
 ];
 
 // Add credentialUrl to any entry once you have the real link — it makes a
@@ -116,6 +118,11 @@ export const certifications = [
   { title: "EGOVPH Hackathon", issuer: "EGOVPH", date: "Jul 2026", hours: "48 hrs", category: "Hackathon", credentialUrl: null }, 
   { title: "Project Initiation: Starting a Successful Project", issuer: "Google CourseEra", date: "Aug 2026", hours: "15 hrs", category: "ProjectManagement", credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/UIJGJ65ATJQ0" }, 
   { title: "Claude 101", issuer: "DataCamp", date: "Aug 2026", hours: "2 hrs", category: "AI Agents", credentialUrl: "https://www.datacamp.com/statement-of-accomplishment/course/0e85a38a0aca6f20a2a23c0018f3dc6b68a02504?raw=1" }, 
+  { title: "Understanding Cloud Computing", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: null }, 
+  { title: "AWS Concepts", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "AWS", credentialUrl: null }, 
+  { title: "AWS Cloud Technology and Services", issuer: "DataCamp", date: "Sep 2026", hours: "13 hrs", category: "AWS", credentialUrl: null }, 
+  { title: "Introduction to SQL", issuer: "DataCamp", date: "Sep 2026", hours: "4 hrs", category: "SQL", credentialUrl: null }, 
+  { title: "Project Planning: Putting It All Together", issuer: "Google CourseEra", date: "Sep 2026", hours: "10 hrs", category: "ProjectManagement", credentialUrl: null }, 
 ];
 
 export const skillGroups = [
